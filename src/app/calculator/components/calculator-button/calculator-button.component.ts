@@ -27,9 +27,9 @@ export class CalculatorButtonComponent implements OnInit  {
   }
 
   public handleClick(): void {    
-    if (this.contentText().length === 0) {
-      return
-    }
+    // if (this.contentText().length === 0) {
+    //   return
+    // }
     this.onClick.emit(this.contentText());
   }
 
