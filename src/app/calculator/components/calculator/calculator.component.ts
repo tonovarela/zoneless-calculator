@@ -12,7 +12,7 @@ import { CalculatorService } from '@/calculator/services/calculator.service';
 })
 export class CalculatorComponent {
   private _calculatorService = inject(CalculatorService);
-  private _calculatorButtons = viewChildren(CalculatorButtonComponent)
+   _calculatorButtons = viewChildren(CalculatorButtonComponent)
 
   public resultText = computed(() => this._calculatorService.resultText());
   public subResultText = computed(() => this._calculatorService.subResultText());
